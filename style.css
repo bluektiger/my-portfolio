@@ -1,16 +1,28 @@
 body{
     font-family: fangsong;
     font-style: inherit;
-    background-color: orangered;
+    background-color: lightsteelblue;
 }
 header {
     text-align: center; 
     color: blue;
     border-width: 10px;
+    background-color: steelblue;
+}
+.content {
+    padding: 5px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+.sticky + .content {
+    padding-top: 102px;
 }
 #me{
     width: 388px;
-    padding-left: 407px;
+    padding-left: 220px;
     padding-top: 10px;
 }
 p{
@@ -24,11 +36,25 @@ div{
     display: inline-flexbox;
 }
 p{
-    color: white;
+    color: black;
 }
 ul{
-    color: white;
+    color: black;
 }
 nav{
     display:flow-root;
+}
+.sticky{
+    background-color: steelblue; 
+    color: black;
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: bold;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+  }
+body{
+    padding-top: 110px;
 }
